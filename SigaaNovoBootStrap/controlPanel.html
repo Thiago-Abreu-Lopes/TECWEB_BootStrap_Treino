@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="controlPanelStyle.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Controle - SIGAA</title>
+  <style>
+    .imagem {
+      display: block;
+      position: relative;
+      text-align: center;
+      border-radius: 10px;
+      background-image: url("pos-graduacao.jpg");
+      background-size: cover;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Painel de Controle - Usuário </h1>
+    <button><a href="/index.html">Sair</a></button>
+  </header>
+  <nav class="navegador">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary"><a href="/controlPanel.html">Usuário</a></button>
+      <button type="button" class="btn btn-primary"><a href="/history.html">Histórico</a></button>
+      <button type="button" class="btn btn-primary"><a href="/curricularComponents.html">Cadastro de Componentes
+          Curriculares</a></button>
+    </div>
+  </nav>
+  <main>
+    <div class="imagem">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/simples.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/simples2.png" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/simples3.png" class="d-block w-10" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <h2 class="dadosUnisario">Nome: Fulano de Tal</h2>
+    <h3 class="dadosUnisario">Email: fulano.de.tal@alu.ufc.br</h3>
+    <h4 class="dadosUnisario">IRA: 800.00</h4>
+    <h5 class="dadosUnisario">25 créditos computados</h5>
+    <button type="button" class="btn btn-primary position-relative">
+      Comunidade
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        10+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+    <br>
+    <div id="listaDiscplina" class="lista_disciplinas">
+      <h2>Disciplinas Cursadas Atualmente</h2>
+      <ul>
+        <li>Calculo Vetorial</li>
+        <li>Física Geral 3</li>
+        <li>Tecnologia Web</li>
+        <li>Métodos Numéricos</li>
+        <li>Fundamentos da Administração</li>
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Selecionar Thema
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><input type="color" value="#ffffff">Branco</a></li>
+            <li><a class="dropdown-item" href="#"><input type="color" value="#ff0000">Vermelho</a></li>
+            <li><a class="dropdown-item" href="#"><input type="color" value="#0000ff">Azul</a></li>
+          </ul>
+        </div>
+        <!--<div class="selecionaTema">
+                    <span>Selecione o tema:</span>
+                    <input type="color" value="#ffffff">
+                    <input type="color" value="#ff0000">
+                    <input type="color" value="#0000ff">
+                </div>-->
+
+
+      </ul>
+    </div>
+    <br>
+    <div class="Progresso">
+      <h1>Progresso no Curso</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Disciplinas Obrigatórias
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 60%;"
+                  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Disciplinas Eletivas
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 20%;"
+                  aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Horas de estágio obrigatório
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 30%;"
+                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Horas Complementares
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%;"
+                  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Horas de Extensão
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 50%;"
+                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Horas de Programação
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 80%;"
+                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- <ul>
+                <li>Disciplinas Obrigatórias <progress value="60" max="100">60%</progress></li>
+                <li>Disciplinas Eletivas <progress value="20" max="100">20%</progress></li>
+                <li>Horas de estágio obrigatório <progress value="30" max="100">30%</progress></li>
+                <li>Horas Complementares <progress value="0" max="100">0%</progress></li>
+                <li>Horas de Extensão <progress value="50" max="100">50%</progress></li>
+                <li>Horas de Programação <progress value="80" max="100">80%</progress></li>
+            </ul>-->
+    </div>
+    <br>
+    <div class="resumo">
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Atividades</th>
+          <th>Progresso</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Disciplinas Obrigatórias </td>
+          <td>2000/3000hs</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Disciplinas Eletivas</td>
+          <td>200/800hs</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Horas de estágio obrigatório</td>
+          <td>100/400hs</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Horas Complementares</td>
+          <td>0/120hs</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Horas de Extensão</td>
+          <td>150/300hs</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Horas de Programação</td>
+          <td>80/100hs</td>
+        </tr>
+      </table>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div id="list-example" class="list-group">
+          <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example"
+          tabindex="0">
+          <h4 id="list-item-1">Forum de Automação</h4>
+          <p>É o uso de sistemas de controle e de tecnologias da informação para reduzir a necessidade de trabalho
+            humano para a produção de equipamentos e serviços. Tem como propósito a redução da necessidade de uso
+            contínuo dos sentidos humanos para inspeção e da capacidade mental humana para controle.</p>
+          <h4 id="list-item-2">Forum de Ciencias da Computação</h4>
+          <p>Ciência da Computação é a área do conhecimento que atua no desenvolvimento de programas para diferentes
+            dispositivos, a exemplo de celulares e computadores. Programação, banco de dados e sistemas operacionais
+            fazem parte do dia a dia de quem se forma na faculdade de Ciência da Computação</p>
+          <h4 id="list-item-3">Forum de Telecomunicações</h4>
+          <p>Engenharia de Telecomunicações ou Engenharia de Telecom é a área dentro da engenharia que se ocupa do
+            projeto, operação e manutenção de equipamentos e sistemas de telecomunicações. Esse engenheiro desenvolve e
+            implanta redes de comunicações e transmissão de dados</p>
+        </div>
+      </div>
+    </div>
+
+    <button style="margin: 10px 0px" type="button" class="btn btn-primary" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">
+      Turma de 2019.1
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Turma de 2019.1</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+            <div class="tex">>></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer style="position:relative">
+    <h2>SIGAA | Copyright © 2010-2022 - Superintendência de Tecnologia da Informação - UFC - (85) 3366-9999 -
+      si3asprd02.ufc.br</h2>
+  </footer>
+</body>
+
+</html>

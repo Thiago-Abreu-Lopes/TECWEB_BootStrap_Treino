@@ -1,0 +1,50 @@
+.navegador a{
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:antiquewhite;
+}
+.navegador a:hover{
+    color:aliceblue;
+}
+
+header h1{
+    padding: 5px;
+}
+header button{
+    
+    background:none;
+    padding: 5px;
+    border: 0px;
+}
+header button a{
+    background-color:aliceblue;
+    text-decoration: none;
+    color:#0b5e70;
+}
+header button{
+    color:aliceblue;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 0px;
+}
+main{
+    margin-top:20%;
+}
+
+.historico{
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding:30px;
+    text-align: center;
+}
+.historico table{
+    width: 100%;
+}
+.historico table, th,td{
+    font-family: 'Times New Roman';
+    border: 1px solid;
+}

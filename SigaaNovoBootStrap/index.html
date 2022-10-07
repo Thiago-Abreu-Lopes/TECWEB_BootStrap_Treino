@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="indexStyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo SIGAA - Login</title>
+</head>
+
+<body>
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/434px-Brasao_ufc.svg.png" alt="Logo" width="31" height="auto"
+          class="d-inline-block align-text-center">
+        Entrar no Sistema
+      </a>
+    </div>
+  </nav>
+  <main>
+    <div class="contForm">
+      <form method="post">
+        <label style="font-size:xx-large">Usuário:</label>
+        <input id="inputTexto" type="text" placeholder="usuário">
+        <label style="font-size:xx-large">Senha:</label>
+        <input id="inputSenha" type="password" placeholder="senha">
+        <input categoria="botao" type="submit" value="Entrar">
+
+      </form>
+    </div>
+    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+      data-bs-placement="bottom" data-bs-content="Lotado - Inicio de Periodo de Matrícula">
+      Estado do Site
+    </button>
+    <div class="d-flex align-items-center">
+      <strong>Loading...</strong>
+      <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button style="margin: 10px 0px" type="button" class="btn btn-primary" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">
+      Sobre a Instituição
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Sobre a Instituição</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            A Universidade Federal do Ceará (UFC) é uma instituição de ensino superior pública brasileira, mantida pelo
+            Governo Federal do Brasil, localizada no Estado do Ceará. A UFC é uma autarquia vinculada ao Ministério da
+            Educação e considerada a melhor universidade das regiões Norte-Nordeste [2] [3]. É uma das maiores
+            universidades federais do país e um dos centros brasileiros de excelência no ensino e pesquisa.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <h2>SIGAA | Copyright © 2010-2022 - Superintendência de Tecnologia da Informação - UFC - (85) 3366-9999 -
+      si3asprd02.ufc.br</h2>
+  </footer>
+</body>
+
+</html>

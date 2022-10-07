@@ -1,0 +1,50 @@
+.contForm{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    margin: 80% 0% 0% 0% ;
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+    color:#0b5e70;
+}
+#inputTexto{
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(42, 88, 100);
+    color: aliceblue;
+}
+
+#inputTexto::placeholder{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+}
+
+#inputSenha{
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(42, 88, 100);
+    color: aliceblue;
+}
+
+#inputSenha::placeholder{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+}
+
+[categoria]{
+    border:0px;
+    border-radius: 5px;
+    margin: 10px 0px 0px 0px; 
+    padding: 10px;
+    background-color: #0b5e70;
+    color:aliceblue;
+}
+[categoria]:hover{
+    background-color:aliceblue ;
+    color:#0b5e70;
+
+}
